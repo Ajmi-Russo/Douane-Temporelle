@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- colors lel principale -->
+    <color name="background_dark">#0B1020</color>
+    <color name="background_card">#26365C</color>
+
+    <!-- colors lel ktiba-->
+    <color name="white">#FFFFFF</color>
+    <color name="text_secondary">#C4CEE5</color>
+    <color name="text_hint">#8995AE</color>
+    <color name="text_subtitle">#8B9BBF</color>
+
+    <!-- colors accent -->
+    <color name="primary">#536DFE</color>
+    <color name="primary_light">#8EA5FF</color>
+    <color name="input_accent">#6479FF</color>
+
+    <!-- resultat colors -->
+    <color name="success">#2ECC71</color>
+    <color name="danger">#C03950</color>
+
+</resources>

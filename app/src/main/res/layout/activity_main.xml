@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- titre l applications -->
+
+        <TextView
+            android:id="@+id/txt_title_aj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="35dp" />
+
+        <!-- hint ta7t titre  -->
+
+        <TextView
+            android:id="@+id/txt_subtitle_aj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_subtitle"
+            android:textColor="@color/text_subtitle"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="35dp" />
+
+        <!-- esm voyageur -->
+
+        <TextView
+            android:id="@+id/txt_nom_label_aj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/traveler_name"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edt_nom_aj"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/name_hint"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_hint"
+            android:backgroundTint="@color/input_accent" />
+
+        <!-- 3am lwileda -->
+
+        <TextView
+            android:id="@+id/txt_naissance_label_aj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/birth_year"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edt_naissance_aj"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/birth_year_hint"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_hint"
+            android:backgroundTint="@color/input_accent" />
+
+        <!-- lwin -->
+
+        <TextView
+            android:id="@+id/txt_destination_label_aj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/destination_year"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edt_destination_aj"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/destination_year_hint"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_hint"
+            android:backgroundTint="@color/input_accent" />
+
+        <!-- 3lech msefer-->
+
+        <TextView
+            android:id="@+id/txt_motif_label_aj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/travel_purpose"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spn_motif_aj"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/input_accent"
+            android:popupBackground="@color/background_card" />
+
+        <!-- inspect profile btn -->
+
+        <Button
+            android:id="@+id/btn_inspecter_aj"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="@string/inspect_profile"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:backgroundTint="@color/primary"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="25dp" />
+
+    </LinearLayout>
+
+</ScrollView>

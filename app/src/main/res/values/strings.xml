@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app -->
+    <string name="app_name">Douane Temporelle</string>
+    <string name="app_title">Douane Temporelle</string>
+    <string name="app_subtitle">Time Travel Customs</string>
+
+    <!-- activité mta3 tasjil -->
+    <string name="traveler_name">Traveler Name</string>
+    <string name="name_hint">Enter your full name</string>
+
+    <string name="birth_year">Birth Year</string>
+    <string name="birth_year_hint">Ex: 1990</string>
+
+    <string name="destination_year">Destination Year</string>
+    <string name="destination_year_hint">Ex: 2050</string>
+
+    <string name="travel_purpose">Travel Purpose</string>
+    <string name="inspect_profile">Inspect Profile</string>
+
+    <string name="temporal_age">Temporal age</string>
+
+    <!-- naw3 lvoyage -->
+    <string-array name="travel_purposes">
+        <item>Tourisme</item>
+        <item>Modification du passé</item>
+        <item>Fuite</item>
+    </string-array>
+
+    <!-- messages bech yodhhrou-->
+    <string name="error_name">Veuillez saisir votre nom</string>
+    <string name="error_birth_year">Veuillez saisir votre année de naissance</string>
+    <string name="error_destination_year">Veuillez saisir votre année de destination</string>
+    <string name="error_invalid_year">Année invalide</string>
+
+    <!-- activité l ta2kid -->
+    <string name="passport_title">Time Travel Passport </string>
+    <string name="passport_traveler">Traveler: %1$s</string>
+    <string name="passport_birth_year">Birth year: %1$d</string>
+    <string name="passport_destination">Destination: %1$d</string>
+    <string name="passport_age">Temporal age: %1$d years</string>
+    <string name="passport_purpose">Travel purpose: %1$s</string>
+
+    <!-- ekhtilef scanner -->
+    <string name="paradox_title">Paradox Scanner</string>
+    <string name="paradox_detected">Paradox Detected - Approval Blocked</string>
+    <string name="no_paradox">No Temporal Paradox Detected</string>
+
+    <!-- Verif btn -->
+    <string name="approve">Approve</string>
+    <string name="refuse">Refuse</string>
+
+    <!-- Resultat messages -->
+    <string name="voyage_approved">Voyage approved</string>
+    <string name="voyage_refused">Voyage refused</string>
+    <string name="new_traveler">New Traveler</string>
+</resources>
