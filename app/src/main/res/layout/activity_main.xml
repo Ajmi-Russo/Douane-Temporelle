@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_dark"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:scrollbars="none">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="24dp"
+        android:fontFamily="cursive">
 
-        <!-- titre l applications -->
+        <!-- titre lel applications -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:letterSpacing="0.12"
+            android:text="@string/temporal_authority"
+            android:textColor="@color/primary_light"
+            android:textSize="13sp" />
 
         <TextView
             android:id="@+id/txt_title_aj"
@@ -21,129 +32,173 @@
             android:layout_height="wrap_content"
             android:text="@string/app_title"
             android:textColor="@color/white"
-            android:textSize="27sp"
+            android:textSize="32sp"
             android:textStyle="bold"
+            android:fontFamily="cursive"
             android:gravity="center"
-            android:layout_marginTop="35dp" />
+            android:layout_marginTop="12dp" />
 
-        <!-- hint ta7t titre  -->
-
+        <!-- hint ta7t titre -->
         <TextView
             android:id="@+id/txt_subtitle_aj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:letterSpacing="0.15"
             android:text="@string/app_subtitle"
             android:textColor="@color/text_subtitle"
-            android:textSize="13sp"
+            android:textSize="14sp" />
+
+        <!-- card mta3 inscription -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/bg_registration_card">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:fontFamily="serif"
+                android:text="@string/traveler_identification"
+                android:textColor="@color/primary_light"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <!-- esm voyageur -->
+            <TextView
+                android:id="@+id/txt_nom_label_aj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="serif"
+                android:text="@string/traveler_name"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_nom_aj"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="@string/name_hint"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:padding="14dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp"
+                android:fontFamily="cursive"
+                android:background="@drawable/bg_input_field" />
+
+            <!-- 3am lwileda -->
+            <TextView
+                android:id="@+id/txt_naissance_label_aj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="serif"
+                android:text="@string/birth_year"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_naissance_aj"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="@string/birth_year_hint"
+                android:inputType="number"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:padding="14dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp"
+                android:fontFamily="cursive"
+                android:background="@drawable/bg_input_field" />
+
+            <!-- lwin -->
+            <TextView
+                android:id="@+id/txt_destination_label_aj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="serif"
+                android:text="@string/destination_year"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_destination_aj"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="@string/destination_year_hint"
+                android:inputType="number"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:padding="14dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp"
+                android:fontFamily="cursive"
+                android:background="@drawable/bg_input_field" />
+
+            <!-- 3lech msefer -->
+            <TextView
+                android:id="@+id/txt_motif_label_aj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="serif"
+                android:text="@string/travel_purpose"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spn_motif_aj"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:entries="@array/travel_purposes"
+                android:background="@drawable/bg_input_field"
+                android:popupBackground="@color/background_card"
+                android:spinnerMode="dropdown"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <!-- inspect profile btn -->
+            <Button
+                android:id="@+id/btn_inspecter_aj"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="@string/inspect_profile"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:fontFamily="cursive"
+                android:backgroundTint="@color/primary"
+                android:layout_marginTop="30dp" />
+
+        </LinearLayout>
+
+        <!-- footer mta3 application -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/temporal_security_system"
+            android:textColor="@color/text_subtitle"
+            android:textSize="12sp"
+            android:fontFamily="cursive"
             android:gravity="center"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="35dp" />
-
-        <!-- esm voyageur -->
-
-        <TextView
-            android:id="@+id/txt_nom_label_aj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/traveler_name"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:layout_marginBottom="8dp" />
-
-        <EditText
-            android:id="@+id/edt_nom_aj"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:hint="@string/name_hint"
-            android:inputType="textPersonName"
-            android:singleLine="true"
-            android:padding="12dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/text_hint"
-            android:backgroundTint="@color/input_accent" />
-
-        <!-- 3am lwileda -->
-
-        <TextView
-            android:id="@+id/txt_naissance_label_aj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/birth_year"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="8dp" />
-
-        <EditText
-            android:id="@+id/edt_naissance_aj"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:hint="@string/birth_year_hint"
-            android:inputType="number"
-            android:maxLength="4"
-            android:singleLine="true"
-            android:padding="12dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/text_hint"
-            android:backgroundTint="@color/input_accent" />
-
-        <!-- lwin -->
-
-        <TextView
-            android:id="@+id/txt_destination_label_aj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/destination_year"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="8dp" />
-
-        <EditText
-            android:id="@+id/edt_destination_aj"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:hint="@string/destination_year_hint"
-            android:inputType="number"
-            android:maxLength="4"
-            android:singleLine="true"
-            android:padding="12dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/text_hint"
-            android:backgroundTint="@color/input_accent" />
-
-        <!-- 3lech msefer-->
-
-        <TextView
-            android:id="@+id/txt_motif_label_aj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/travel_purpose"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="8dp" />
-
-        <Spinner
-            android:id="@+id/spn_motif_aj"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:backgroundTint="@color/input_accent"
-            android:popupBackground="@color/background_card" />
-
-        <!-- inspect profile btn -->
-
-        <Button
-            android:id="@+id/btn_inspecter_aj"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:text="@string/inspect_profile"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:backgroundTint="@color/primary"
-            android:layout_marginTop="35dp"
-            android:layout_marginBottom="25dp" />
+            android:letterSpacing="0.08"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp" />
 
     </LinearLayout>
 

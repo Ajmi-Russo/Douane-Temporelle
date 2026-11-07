@@ -54,4 +54,11 @@
     <string name="voyage_approved">Voyage approved</string>
     <string name="voyage_refused">Voyage refused</string>
     <string name="new_traveler">New Traveler</string>
+
+    <!-- titre w l footer -->
+    <string name="temporal_authority">◈ Temporal Authority ◈</string>
+    <string name="temporal_security_system">◈ Temporal Security System ◈</string>
+
+    <!-- tafsir sghayer lel carta -->
+    <string name="traveler_identification">Traveler identification</string>
 </resources>
