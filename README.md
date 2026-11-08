@@ -3,4 +3,4 @@
 
 
 --- welcomer 
-![Home](screenshots/home.png)
+![Home](screenshots/welcome.png)
