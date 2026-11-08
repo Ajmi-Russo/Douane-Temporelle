@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DouaneTemporelle">
 
-        <!-- écran d'accueil: houwa elli yet7al awwel (LAUNCHER) -->
+        <!-- écran d'accueil: howa lwelcome eli yet7al loul  -->
         <activity
             android:name=".WelcomeActivity"
             android:exported="true">
