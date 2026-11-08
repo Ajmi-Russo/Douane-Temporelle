@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+
+    <!-- taswira el khalfia (tcouvri el ecran kemela) -->
+    <ImageView
+        android:id="@+id/img_bg_aj"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_welcome" />
+
+    <!-- el contenu fo9 el 5alfia -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- fara8 bech el texte yet7at ta7t el hero -->
+        <TextView
+            android:id="@+id/txt_title_welcome_aj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="cursive"
+            android:text="@string/app_title"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:layout_weight="1.7" />
+
+        <TextView
+            android:id="@+id/txt_bienvenue_aj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/abhaya_libre_bold"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:text="@string/welcome_msg"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_welcome_sub_aj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/app_subtitle"
+            android:textColor="@color/text_subtitle"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_commencer_aj"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_btn_gold_glow"
+            android:text="@string/start"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</FrameLayout>
