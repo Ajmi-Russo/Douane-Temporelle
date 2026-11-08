@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- bech l NumberPicker ykoun el ktiba 3andha lon abyedh -->
+    <style name="ThemeOverlay.Picker" parent="">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
