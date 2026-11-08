@@ -6,3 +6,12 @@
 
 ### Welcome
 ![Home](screenshots/welcome.png)
+
+---
+
+### Formulaire
+![Main](screenshots/main_acivity_1.png)
+![Main](screenshots/main_acivity_2.png)
+---
+
+
