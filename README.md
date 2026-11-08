@@ -10,8 +10,8 @@
 ---
 
 ### Formulaire
-![Main](screenshots/main_acivity_1.png)
-![Main](screenshots/main_acivity_2.png)
+![Main](screenshots/main_activity_1.png)
+![Main](screenshots/main_activity_2.png)
 ---
 
 
