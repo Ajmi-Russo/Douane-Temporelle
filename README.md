@@ -14,4 +14,11 @@
 ![Main](screenshots/main_activity_2.png)
 ---
 
+### Verif
+![Verif]( screenshots/verif.png)
+---
 
+### Result
+![Approved](screenshots/approved.png)
+![Rejected](screenshots/rejected.png)
+---
