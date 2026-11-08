@@ -10,7 +10,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-// écran d'accueil (bonus): "Bienvenue" + bouton "Commencer"
+// awel interface "activity" (bonus): "Bienvenue" + btn "Commencer"nabda beha l user experience
 public class WelcomeActivity extends AppCompatActivity {
 
     @Override
