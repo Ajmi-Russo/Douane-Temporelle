@@ -5,6 +5,10 @@
     <string name="app_title">Douane Temporelle</string>
     <string name="app_subtitle">Time Travel Customs</string>
 
+    <!-- welcome screen -->
+    <string name="welcome_msg">Bienvenue :)</string>
+    <string name="start">Commencer  &#8250;</string>
+
     <!-- activité mta3 tasjil -->
     <string name="traveler_name">Traveler Name</string>
     <string name="name_hint">Enter your full name</string>
@@ -14,6 +18,7 @@
 
     <string name="destination_year">Destination Year</string>
     <string name="destination_year_hint">Ex: 2050</string>
+    <string name="destination_date">Destination Date</string>
 
     <string name="travel_purpose">Travel Purpose</string>
     <string name="inspect_profile">Inspect Profile</string>
@@ -21,6 +26,9 @@
     <string name="temporal_age">Temporal age</string>
 
     <!-- naw3 lvoyage -->
+    <string name="purpose_tourism">Tourisme</string>
+    <string name="purpose_past">Modif du passé</string>
+    <string name="purpose_escape">Fuite</string>
     <string-array name="travel_purposes">
         <item>Tourisme</item>
         <item>Modification du passé</item>
@@ -34,10 +42,10 @@
     <string name="error_invalid_year">Année invalide</string>
 
     <!-- activité l ta2kid -->
-    <string name="passport_title">Time Travel Passport </string>
+    <string name="passport_title">Time Travel Passport</string>
     <string name="passport_traveler">Traveler: %1$s</string>
     <string name="passport_birth_year">Birth year: %1$d</string>
-    <string name="passport_destination">Destination: %1$d</string>
+    <string name="passport_destination">Destination: %1$s</string>
     <string name="passport_age">Temporal age: %1$d years</string>
     <string name="passport_purpose">Travel purpose: %1$s</string>
 
@@ -47,18 +55,13 @@
     <string name="no_paradox">No Temporal Paradox Detected</string>
 
     <!-- Verif btn -->
-    <string name="approve">Approve</string>
-    <string name="refuse">Refuse</string>
+    <string name="approve">Approuver le saut temporel</string>
+    <string name="refuse">Refuser (Risque de paradoxe)</string>
 
     <!-- Resultat messages -->
     <string name="voyage_approved">Voyage approved</string>
     <string name="voyage_refused">Voyage refused</string>
-    <string name="new_traveler">New Traveler</string>
-
-    <!-- titre w l footer -->
-    <string name="temporal_authority">◈ Temporal Authority ◈</string>
-    <string name="temporal_security_system">◈ Temporal Security System ◈</string>
-
-    <!-- tafsir sghayer lel carta -->
-    <string name="traveler_identification">Traveler identification</string>
+    <string name="msg_approved">Bon voyage %1$s</string>
+    <string name="msg_refused">%1$s est en état d\'arrestation temporelle</string>
+    <string name="new_traveler">Nouveau voyageur</string>
 </resources>
