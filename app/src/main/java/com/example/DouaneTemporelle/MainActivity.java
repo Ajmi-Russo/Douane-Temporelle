@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
     };
 
-    private EditText edtNom, edtNaissance;
+    private EditText edtNom, edtNaissance, edtCarte;
     private RadioGroup rgMotif;
     private NumberPicker npYear, npMonth, npDay;
 
@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         // narebtou el vues bel ids
         edtNom = findViewById(R.id.edt_nom_aj);
         edtNaissance = findViewById(R.id.edt_naissance_aj);
+        edtCarte = findViewById(R.id.edt_carte_aj);
         rgMotif = findViewById(R.id.rg_motif_aj);
         npYear = findViewById(R.id.np_year_aj);
         npMonth = findViewById(R.id.np_month_aj);
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         npYear.setOnValueChangedListener((p, o, n) -> updateDays());
         npMonth.setOnValueChangedListener((p, o, n) -> updateDays());
 
-        // bech l clavier ma yatla3ch ki nal3ab bel pickers
+        // bech l clavier ma yatla3ch ki nal3ab bel pickers (l3ajla)
         NumberPicker[] pickers = {npYear, npMonth, npDay};
         for (NumberPicker p : pickers) {
             p.setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);
@@ -93,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // n7sbou a9sa nhar fel chhar eli a7na fih
+    // n7sbou akther nhar fel chhar eli a7na fih
     private void updateDays() {
         GregorianCalendar cal = new GregorianCalendar(
                 npYear.getValue(), npMonth.getValue() - 1, 1);
@@ -101,14 +102,21 @@ public class MainActivity extends AppCompatActivity {
         npDay.setMaxValue(max);
     }
 
-    // na9ra el données, nverifiw, w nab3thou lel activité 2
+    // na9ra données, nverifiw, w naadehom lel activité 2
     private void inspecterProfil() {
         String nom = edtNom.getText().toString().trim();
         String naissanceStr = edtNaissance.getText().toString().trim();
 
-        // verification mta3 esm
+        // verification mta3 lesm
         if (nom.isEmpty()) {
             edtNom.setError(getString(R.string.error_name));
+            return;
+        }
+
+        // verification mta3 l4 ar9am mta3 carte étudiant
+        String carte = edtCarte.getText().toString().trim();
+        if (carte.length() != 4) {
+            edtCarte.setError(getString(R.string.error_card));
             return;
         }
 
@@ -130,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         String date = String.format(Locale.getDefault(), "%02d %s %d",
                 npDay.getValue(), MOIS[npMonth.getValue() - 1], destination);
 
-        // el motif 7asb el chip el mokhtar
+        // motif 7asb chip eli te5taret
         String motif;
         int checkedId = rgMotif.getCheckedRadioButtonId();
         if (checkedId == R.id.rdo_passe_aj) {
@@ -144,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
         // Intent explicite + clés mabnia bel méthode statique
         Intent intent = new Intent(MainActivity.this, verif.class);
         intent.putExtra(IntentKeys.getKey(IntentKeys.MATRICULE, IntentKeys.NOM), nom);
+        intent.putExtra(IntentKeys.getKey(IntentKeys.MATRICULE, IntentKeys.CARTE), carte);
         intent.putExtra(IntentKeys.getKey(IntentKeys.MATRICULE, IntentKeys.NAISSANCE), naissance);
         intent.putExtra(IntentKeys.getKey(IntentKeys.MATRICULE, IntentKeys.DESTINATION), destination);
         intent.putExtra(IntentKeys.getKey(IntentKeys.MATRICULE, IntentKeys.DATE), date);

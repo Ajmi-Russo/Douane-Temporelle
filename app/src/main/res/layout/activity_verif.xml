@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:background="@color/background_dark">
+    android:background="@color/background_dark"
+    android:orientation="horizontal">
 
     <!-- taswiret l passport 30% -->
 
@@ -13,20 +14,21 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.3"
-        android:src="@android:drawable/ic_menu_myplaces"
-        android:scaleType="centerInside"
-        android:padding="12dp"
         android:background="@color/background_card"
         android:contentDescription="@string/passport_title"
-        android:tint="@color/white" />
+        android:padding="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_clock" />
 
     <!-- ma3loumet l voyageur 70% -->
 
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_margin="12dp"
         android:layout_weight="0.7"
-        android:padding="14dp">
+        android:background="@drawable/bg_passport"
+        android:padding="16dp">
 
         <!-- titre l passport -->
 
@@ -34,12 +36,22 @@
             android:id="@+id/txt_passport_title_aj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/passport_title"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="18sp"
+            android:layout_marginTop="12dp"
             android:gravity="center"
-            android:layout_marginTop="20dp" />
+            android:text="@string/passport_title"
+            android:textColor="@color/gold"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- khat dhhebi -->
+
+        <View
+            android:id="@+id/line_passport_aj"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txt_passport_title_aj"
+            android:layout_marginTop="12dp"
+            android:background="@color/gold" />
 
         <!-- esm l msefer -->
 
@@ -47,11 +59,24 @@
             android:id="@+id/txt_nom_aj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txt_passport_title_aj"
-            android:layout_marginTop="35dp"
+            android:layout_below="@id/line_passport_aj"
+            android:layout_marginTop="24dp"
             android:text="@string/traveler_name"
             android:textColor="@color/white"
-            android:textSize="15sp" />
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- carte d'etudiant -->
+
+        <TextView
+            android:id="@+id/txt_carte_aj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_nom_aj"
+            android:layout_marginTop="18dp"
+            android:text="@string/student_card"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
 
         <!-- 3am lwileda -->
 
@@ -59,8 +84,8 @@
             android:id="@+id/txt_naissance_aj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txt_nom_aj"
-            android:layout_marginTop="22dp"
+            android:layout_below="@id/txt_carte_aj"
+            android:layout_marginTop="18dp"
             android:text="@string/birth_year"
             android:textColor="@color/text_secondary"
             android:textSize="14sp" />
@@ -72,7 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_naissance_aj"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="18dp"
             android:text="@string/destination_year"
             android:textColor="@color/text_secondary"
             android:textSize="14sp" />
@@ -84,7 +109,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_destination_aj"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="18dp"
             android:text="@string/temporal_age"
             android:textColor="@color/primary_light"
             android:textSize="15sp"
@@ -97,7 +122,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_age_aj"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="18dp"
             android:text="@string/travel_purpose"
             android:textColor="@color/text_secondary"
             android:textSize="14sp" />
@@ -105,40 +130,56 @@
         <!-- ektichef ekhtilef -->
 
         <TextView
-            android:id="@+id/txt_paradox_aj"
+            android:id="@+id/txt_paradox_title_aj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_motif_aj"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="24dp"
+            android:letterSpacing="0.1"
             android:text="@string/paradox_title"
-            android:textColor="@color/primary_light"
-            android:textStyle="bold"
-            android:textSize="13sp" />
+            android:textColor="@color/gold"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_paradox_aj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_paradox_title_aj"
+            android:layout_marginTop="4dp"
+            android:text="@string/no_paradox"
+            android:textColor="@color/success"
+            android:textSize="13sp"
+            android:textStyle="bold" />
 
         <!-- e9bel  -->
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_approuver_aj"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="52dp"
             android:layout_above="@id/btn_refuser_aj"
             android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_btn_primary"
             android:text="@string/approve"
+            android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:backgroundTint="@color/primary" />
+            android:textSize="13sp"
+            android:textStyle="bold" />
 
         <!-- orfodh -->
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_refuser_aj"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="52dp"
             android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_btn_danger"
             android:text="@string/refuse"
+            android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:backgroundTint="@color/danger" />
+            android:textSize="13sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

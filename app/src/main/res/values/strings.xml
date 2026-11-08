@@ -64,4 +64,9 @@
     <string name="msg_approved">Bon voyage %1$s</string>
     <string name="msg_refused">%1$s est en état d\'arrestation temporelle</string>
     <string name="new_traveler">Nouveau voyageur</string>
+    <!-- arb3a ar9am lekhrenin mel carte étudiant -->
+    <string name="student_card">Student Card</string>
+    <string name="student_card_hint">Last 4 digits</string>
+    <string name="error_card">Entrez les 4 derniers chiffres</string>
+    <string name="passport_card">Student card: ****%1$s</string>
 </resources>

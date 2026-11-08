@@ -2,10 +2,10 @@ package com.example.DouaneTemporelle;
 
 public class IntentKeys {
 
-    // 4 ar9am le5renin mel carte d'etudiant 
+    // 4 ar9am lekhrin mel carte d'etudiant
     public static final String MATRICULE = "1234";
 
-    // el esm2 mta3 les clés (el prefix yet7at automatiquement)
+    // el asm2 mta3 les clés (el prefix yet7at automatiquement)
     public static final String NOM = "NOM_VOYAGEUR";
     public static final String NAISSANCE = "ANNEE_NAISSANCE";
     public static final String DESTINATION = "ANNEE_DESTINATION";
