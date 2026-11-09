@@ -1,24 +1,39 @@
 # Douane-Temporelle
-```By Ajmi Mohamed Aziz 3BI A07```
 
+```text
+By Ajmi Mohamed Aziz — 3BI A07
+```
 
 ---
 
 ### Welcome
-![Home](screenshots/welcome.png)
+
+<p align="center">
+  <img src="screenshots/welcome.png" width="300">
+</p>
 
 ---
 
 ### Formulaire
-![Main](screenshots/main_activity_1.png)
-![Main](screenshots/main_activity_2.png)
+
+<p align="center">
+  <img src="screenshots/main_activity_1.png" width="300">
+  <img src="screenshots/main_activity_2.png" width="300">
+</p>
+
 ---
 
-### Verif
-![Verif]( screenshots/verif.png)
+### Vérification
+
+<p align="center">
+  <img src="screenshots/verif.png" width="300">
+</p>
+
 ---
 
 ### Result
-![Approved](screenshots/approved.png)
-![Rejected](screenshots/rejected.png)
----
+
+<p align="center">
+  <img src="screenshots/approved.png" width="300">
+  <img src="screenshots/rejected.png" width="300">
+</p>
