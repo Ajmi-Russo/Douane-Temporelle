@@ -1,186 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_dark"
-    android:orientation="horizontal">
+    android:background="@color/background_dark">
 
-    <!-- taswiret l passport 30% -->
-
+    <!-- bg: taswirt l passport men 5ayeli -->
     <ImageView
-        android:id="@+id/img_passport_aj"
-        android:layout_width="0dp"
+        android:id="@+id/img_bg_verif_aj"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.3"
-        android:background="@color/background_card"
-        android:contentDescription="@string/passport_title"
-        android:padding="8dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/ic_clock" />
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coverr" />
 
-    <!-- ma3loumet l voyageur 70% -->
 
-    <RelativeLayout
-        android:layout_width="0dp"
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="12dp"
-        android:layout_weight="0.7"
-        android:background="@drawable/bg_passport"
-        android:padding="16dp">
+        android:orientation="horizontal">
 
-        <!-- titre l passport -->
+        <!-- taswiret l passport 30% -->
 
-        <TextView
-            android:id="@+id/txt_passport_title_aj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/img_passport_aj"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
-            android:gravity="center"
-            android:text="@string/passport_title"
-            android:textColor="@color/gold"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <!-- khat dhhebi -->
-
-        <View
-            android:id="@+id/line_passport_aj"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@id/txt_passport_title_aj"
-            android:layout_marginTop="12dp"
-            android:background="@color/gold" />
-
-        <!-- esm l msefer -->
-
-        <TextView
-            android:id="@+id/txt_nom_aj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/line_passport_aj"
-            android:layout_marginTop="24dp"
-            android:text="@string/traveler_name"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <!-- carte d'etudiant -->
-
-        <TextView
-            android:id="@+id/txt_carte_aj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txt_nom_aj"
-            android:layout_marginTop="18dp"
-            android:text="@string/student_card"
-            android:textColor="@color/text_secondary"
-            android:textSize="14sp" />
-
-        <!-- 3am lwileda -->
-
-        <TextView
-            android:id="@+id/txt_naissance_aj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txt_carte_aj"
-            android:layout_marginTop="18dp"
-            android:text="@string/birth_year"
-            android:textColor="@color/text_secondary"
-            android:textSize="14sp" />
-
-        <!-- lwin mechy -->
-
-        <TextView
-            android:id="@+id/txt_destination_aj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txt_naissance_aj"
-            android:layout_marginTop="18dp"
-            android:text="@string/destination_year"
-            android:textColor="@color/text_secondary"
-            android:textSize="14sp" />
-
-        <!-- temporal age -->
-
-        <TextView
-            android:id="@+id/txt_age_aj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txt_destination_aj"
-            android:layout_marginTop="18dp"
-            android:text="@string/temporal_age"
-            android:textColor="@color/primary_light"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <!-- lweh -->
-
-        <TextView
-            android:id="@+id/txt_motif_aj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txt_age_aj"
-            android:layout_marginTop="18dp"
-            android:text="@string/travel_purpose"
-            android:textColor="@color/text_secondary"
-            android:textSize="14sp" />
-
-        <!-- ektichef ekhtilef -->
-
-        <TextView
-            android:id="@+id/txt_paradox_title_aj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txt_motif_aj"
-            android:layout_marginTop="24dp"
-            android:letterSpacing="0.1"
-            android:text="@string/paradox_title"
-            android:textColor="@color/gold"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txt_paradox_aj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txt_paradox_title_aj"
-            android:layout_marginTop="4dp"
-            android:text="@string/no_paradox"
-            android:textColor="@color/success"
-            android:textSize="13sp"
-            android:textStyle="bold" />
-
-        <!-- e9bel  -->
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_approuver_aj"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_above="@id/btn_refuser_aj"
             android:layout_marginBottom="12dp"
-            android:background="@drawable/bg_btn_primary"
-            android:text="@string/approve"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="13sp"
-            android:textStyle="bold" />
+            android:layout_weight="0.3"
+            android:background="@drawable/bg_passport_side"
+            android:clipToOutline="true"
+            android:contentDescription="@string/passport_title"
+            android:foreground="@drawable/bg_passport_side_fg"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ZEROTROIS" />
 
-        <!-- orfodh -->
+        <!-- ma3loumet l msefr 70% -->
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_refuser_aj"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/bg_btn_danger"
-            android:text="@string/refuse"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="13sp"
-            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/bg_passport"
+            android:padding="16dp">
 
-    </RelativeLayout>
+            <!-- titre l passport -->
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/txt_passport_title_aj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:gravity="center"
+                android:letterSpacing="0.08"
+                android:text="@string/passport_title"
+                android:textColor="@color/gold"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- 5at gold -->
+
+            <View
+                android:id="@+id/line_passport_aj"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_below="@id/txt_passport_title_aj"
+                android:layout_marginTop="12dp"
+                android:background="@color/gold" />
+
+            <!-- esm l msefer -->
+
+            <TextView
+                android:id="@+id/txt_nom_aj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_passport_aj"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:text="@string/traveler_name"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <!-- carte d'etudiant -->
+
+            <TextView
+                android:id="@+id/txt_carte_aj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_nom_aj"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:text="@string/student_card"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp" />
+
+            <!-- wa9teh mwloud -->
+
+            <TextView
+                android:id="@+id/txt_naissance_aj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_carte_aj"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:text="@string/birth_year"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp" />
+
+            <!-- lwin mechy -->
+
+            <TextView
+                android:id="@+id/txt_destination_aj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_naissance_aj"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:text="@string/destination_year"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp" />
+
+            <!-- temporal age -->
+
+            <TextView
+                android:id="@+id/txt_age_aj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_destination_aj"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:text="@string/temporal_age"
+                android:textColor="@color/gold"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <!-- lweh -->
+
+            <TextView
+                android:id="@+id/txt_motif_aj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_age_aj"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:text="@string/travel_purpose"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp" />
+
+            <!-- ektichef ekhtilef -->
+
+            <TextView
+                android:id="@+id/txt_paradox_title_aj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_motif_aj"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:letterSpacing="0.15"
+                android:text="@string/paradox_title"
+                android:textColor="@color/gold"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_paradox_aj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_paradox_title_aj"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_paradox_status"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:padding="10dp"
+                android:text="@string/no_paradox"
+                android:textColor="@color/success"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- e9bel  -->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_approuver_aj"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_above="@id/btn_refuser_aj"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_btn_primary"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:text="@string/approve"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- orfodh -->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_refuser_aj"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_btn_danger"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:text="@string/refuse"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
