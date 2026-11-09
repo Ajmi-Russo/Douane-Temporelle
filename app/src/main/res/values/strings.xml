@@ -27,7 +27,7 @@
 
     <!-- naw3 lvoyage -->
     <string name="purpose_tourism">Tourisme</string>
-    <string name="purpose_past">Modif du passé</string>
+    <string name="purpose_past">Passé</string>
     <string name="purpose_escape">Fuite</string>
     <string-array name="travel_purposes">
         <item>Tourisme</item>
