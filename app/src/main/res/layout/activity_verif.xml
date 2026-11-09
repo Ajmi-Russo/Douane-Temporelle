@@ -14,7 +14,10 @@
         android:scaleType="centerCrop"
         android:src="@drawable/coverr" />
 
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B30B1020" />
 
     <LinearLayout
         android:id="@+id/main"
@@ -37,7 +40,7 @@
             android:contentDescription="@string/passport_title"
             android:foreground="@drawable/bg_passport_side_fg"
             android:scaleType="centerCrop"
-            android:src="@drawable/ZEROTROIS" />
+            android:src="@drawable/zerotrois" />
 
         <!-- ma3loumet l msefr 70% -->
 
